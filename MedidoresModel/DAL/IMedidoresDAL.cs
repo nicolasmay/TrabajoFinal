@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DAL
 {
-    internal interface IMedidoresDAL
+    public interface IMedidoresDAL
     {
         List<Medidore> ObtenerMedidores();
+
+        
+
+        
     }
 }

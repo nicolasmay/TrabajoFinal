@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DAL
 {
-    internal class IUsuariosDAL
+    public class IUsuariosDAL
     {
     }
 }

@@ -8,7 +8,7 @@ namespace MedidoresModel.DAL
 {
     public class LecturasDALDB : ILecturasDAL
     {
-        private MedidoresDBEntities1 medidorDB = new MedidoresDBEntities1 ();
+        private MedidoresDBEntities1 medidorDB = new MedidoresDBEntities1();
 
         public void AgregarLectura(Lectura lectura)
         {
@@ -41,7 +41,19 @@ namespace MedidoresModel.DAL
             aOriginal.Fecha = a.Fecha;
             aOriginal.Hora = a.Hora;
             aOriginal.Valorconsumo = a.Valorconsumo;
+            this.medidorDB.SaveChanges();
 
         }
+
+        public List<Lectura> ObtenerLecturas(int id)
+        {
+            //LINQ
+            var query = from a in this.medidorDB.Lecturas
+            where a.Id == id
+            select a;
+            return query.ToList();
+                        ;
+        }
+        
     }
 }

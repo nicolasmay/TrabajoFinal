@@ -78,7 +78,6 @@
     <Content Include="AgregarUsuario.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="MostrarLectura.aspx" />
-    <Content Include="MostrarMedidor.aspx" />
     <Content Include="MostrarUsuario.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -111,13 +110,6 @@
     <Compile Include="MostrarLectura.aspx.designer.cs">
       <DependentUpon>MostrarLectura.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MostrarMedidor.aspx.cs">
-      <DependentUpon>MostrarMedidor.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MostrarMedidor.aspx.designer.cs">
-      <DependentUpon>MostrarMedidor.aspx</DependentUpon>
-    </Compile>
     <Compile Include="MostrarUsuario.aspx.cs">
       <DependentUpon>MostrarUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -144,6 +136,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MedidoresModel\MedidoresModel.csproj">
+      <Project>{F0F87FF9-8FD2-4D5B-BC32-BB89689312D4}</Project>
+      <Name>MedidoresModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
