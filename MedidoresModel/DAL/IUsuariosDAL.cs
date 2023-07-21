@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DAL
 {
-    public class IUsuariosDAL
+    public interface IUsuariosDAL
     {
+        List<Usuario> ObtenerUsuarios();
+
+        Usuario Obtener(int id);
+
+        void AgregarUsuario(Usuario usuario);
+
+        void EliminarUsuario(int id);
+
+        void Actualizar (Usuario usuario);
     }
 }

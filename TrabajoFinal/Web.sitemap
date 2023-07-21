@@ -3,5 +3,8 @@
   <siteMapNode url="Default.aspx" title="Inicio"  description="">
     <siteMapNode url="AgregarLectura.aspx" title="Agregar Lectura"  description="" />
     <siteMapNode url="MostrarLectura.aspx" title="Mostrar Lectura"  description="" />
+	<siteMapNode url="AgregarUsuario.aspx" title="Agregar Usuarios"  description="" />
+	  <siteMapNode url="MostrarUsuario.aspx" title="Mostrar Usuario"  description="" />
+	  
   </siteMapNode>
 </siteMap>
